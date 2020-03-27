@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tyty.controller.ServeurSideController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="521.0" layoutX="-1.0" layoutY="-7.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/40081640-seamless-pattern-background-fast-food-.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="58.0" layoutX="201.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/burger.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="140.0" layoutY="72.0" prefHeight="43.0" prefWidth="201.0" text="LMAKLA.COM" textFill="#bf1b1b">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Line endX="107.0" layoutX="234.0" layoutY="115.0" startX="-100.0" strokeWidth="3.0" />
+      <Label layoutX="13.0" layoutY="141.0" text="Numero de Table">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="141.0" text="Entree">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="141.0" text="Drink">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="141.0" text="Plat Principale">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="numeroTable" focusColor="RED" labelFloat="true" layoutX="14.0" layoutY="170.0" opacity="0.66" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: white;" unFocusColor="BLACK">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="comboBoxEntree" layoutX="154.0" layoutY="172.0" prefHeight="28.0" prefWidth="93.0" promptText=" Entree" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="comboBoxPlat" layoutX="263.0" layoutY="171.0" prefHeight="28.0" prefWidth="93.0" promptText="  Plat" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="comboBoxDrink" layoutX="371.0" layoutY="171.0" prefHeight="28.0" prefWidth="93.0" promptText=" Drink" style="-fx-background-color: white;" />
+      <TableView fx:id="tableCommandes" layoutX="13.0" layoutY="257.0" prefHeight="200.0" prefWidth="451.0" style="-fx-background-color: yellow;">
+        <columns>
+          <TableColumn fx:id="numCmd" prefWidth="58.0" text="NumCmd" />
+          <TableColumn fx:id="numTable" prefWidth="65.0" text="NumTable" />
+            <TableColumn fx:id="entree" prefWidth="85.0" text="Entree" />
+            <TableColumn fx:id="plat" prefWidth="153.0" text="Plat" />
+            <TableColumn fx:id="drink" prefWidth="89.0" text="Drink" />
+        </columns>
+       
+      </TableView>
+      <JFXButton fx:id="save" buttonType="RAISED" layoutX="13.0" layoutY="223.0" onAction="#enregitrer" prefHeight="25.0" prefWidth="451.0" ripplerFill="WHITE" style="-fx-background-color: green;" text="Enregistrer la commande" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#deconnecter" prefHeight="25.0" prefWidth="43.0" style="-fx-background-color: black;" text="exit" textFill="WHITE" />
+    
+   </children>
+</AnchorPane>

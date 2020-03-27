@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="670.0" fitWidth="653.0" layoutX="-4.0" layoutY="-3.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/40081640-seamless-pattern-background-fast-food-.jpg" />
+         </image>
+      </ImageView>
+      <JFXDrawer layoutX="193.0" layoutY="105.0" prefHeight="0.0" prefWidth="177.0" />
+      <Label layoutX="246.0" layoutY="47.0" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: black;" text=" MENU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/burger.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="74.0" style="-fx-background-color: yellow;" text="LMAKLA.COM">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line layoutX="123.0" layoutY="67.0" startX="-100.0" strokeWidth="3.0" />
+      <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="555.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/burger.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="522.0" layoutY="72.0" style="-fx-background-color: yellow;" text="LMAKLA.COM">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line layoutX="625.0" layoutY="65.0" startX="-100.0" strokeWidth="3.0" />
+      <Line layoutX="374.0" layoutY="103.0" startX="-129.0" strokeWidth="3.0" />
+      <Line endX="25.0" layoutX="347.0" layoutY="41.0" startX="-100.0" strokeWidth="3.0" />
+      <ScrollPane layoutX="20.0" layoutY="156.0" prefHeight="120.0" prefWidth="620.0" style="-fx-background-color: black;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="602.0" />
+        </content>
+      </ScrollPane>
+      <ScrollPane layoutX="20.0" layoutY="335.0" prefHeight="120.0" prefWidth="620.0" style="-fx-background-color: black;">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="603.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="20.0" layoutY="510.0" prefHeight="120.0" prefWidth="620.0" style="-fx-background-color: black;">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="216.0" prefWidth="603.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="40.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/burger.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="40.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/burger.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="42.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/burger.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="95.0" layoutY="22.0" prefHeight="48.0" prefWidth="141.0" text="Cola : 30.00 DH">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="85.0" prefHeight="48.0" prefWidth="150.0" text="Cola : 30.00 DH">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" layoutY="144.0" prefHeight="48.0" prefWidth="141.0" text="Cola : 30.00 DH">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="296.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="234.0" prefWidth="9.0" style="-fx-background-color: black;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="20.0" layoutY="113.0" style="-fx-background-color: red;" text=" Entres : ">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="291.0" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: red;" text=" Plat Principale : ">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="469.0" style="-fx-background-color: red;" text=" Drinks : ">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
